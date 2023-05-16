@@ -26,11 +26,27 @@
     color: #fff;
     margin-left: 1.15em;
   }
+  .mrg{
+    position: relative;
+    top: 50px;
+  }
 .img{
-    display: flex;
     width: 190px;
     margin-left: 70px;
     border-radius: 60px;
+    transform: translateX(0px);
+    animation: float 6s ease-out infinite;
+}
+@keyframes float {
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-60px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
 }
 .moi{
     width: 590px;
@@ -99,6 +115,7 @@
   .fuuu{
     background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(image/pub2.jpg) center center fixed no-repeat;
     background-size: cover;
+    background-position: center;
     height: 800px;
   }
   .fuuu .descr{
